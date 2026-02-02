@@ -1,0 +1,4 @@
+# Information on git collaboration
+
+https://devot.team/blog/git-collaboration
+https://github.com/hei1sme/git-github-book
