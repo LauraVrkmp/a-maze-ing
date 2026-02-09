@@ -8,14 +8,41 @@ file using a hexadecimal wall representation. We also provided a visual represen
 of the maze and organized our code so that the generation logic can be reused later.
 
 ## Goals of this project
+<<<<<<< HEAD
 [ ] Create a maze generator from a config file
 [ ] Generate a perfect maze
 [ ] Create a visual representation of the maze
 [ ] Ensure it is appropriately packaged for reusing later
+=======
+[ ] Create a maze generator from a config file  
+[ ] Generate a perfect maze  
+[ ] Output the maze as a hexadecimal representation  
+[ ] Create a visual representation of the maze  
+[ ] Ensure it is appropriately packaged for reusing later  
+>>>>>>> 3a253cbb3ec556772cacce3111b843e726950130
 
 # Instructions
 
 # Resources
+<<<<<<< HEAD
+=======
+## Using Git for team work
+1. https://devot.team/blog/git-collaboration
+2. https://github.com/hei1sme/git-github-book
+3. https://dev.to/gladyspascual/a-beginner-s-guide-to-using-git-when-working-with-a-team-for-the-first-time-1hba
+
+## Makefiles
+1. https://earthly.dev/blog/python-makefile/
+
+## Maze generation
+1. https://www.youtube.com/watch?v=184Oair5iys
+2. https://en.wikipedia.org/wiki/Maze_generation_algorithm
+3. https://stackoverflow.com/questions/38502/whats-a-good-algorithm-to-generate-a-maze
+4. https://professor-l.github.io/mazes/
+5. https://dchakarov.com/blog/maze-algorithms/
+6. https://uca.hal.science/hal-03174952v1/document
+
+>>>>>>> 3a253cbb3ec556772cacce3111b843e726950130
 
 # Additional Information
 ## Structure and format of the config file
@@ -34,4 +61,8 @@ of the maze and organized our code so that the generation logic can be reused la
 
 ### What can be improved
 
+<<<<<<< HEAD
 ### Tools
+=======
+### Tools
+>>>>>>> 3a253cbb3ec556772cacce3111b843e726950130
