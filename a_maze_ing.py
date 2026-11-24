@@ -6,7 +6,7 @@
 #  By: laveerka                                  +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/11/21 03:09:09 by laveerka        #+#    #+#               #
-#  Updated: 2026/11/24 12:11:00 by laveerka        ###   ########.fr        #
+#  Updated: 2026/11/24 13:22:31 by laveerka        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -33,18 +33,20 @@ def check_arguments() -> None:
 def read_config(file: str) -> dict[str, Any]:
     try:
         with open(file, "r") as f:
-            lines = f.read()
+            lines = f.readlines()
     except (FileNotFoundError, PermissionError) as e:
         print(f"Error opening file '{file}': {e}")
         sys.exit(1)
     required = ["WIDTH", "HEIGHT", "ENTRY", "EXIT", "OUTPUT_FILE", "PERFECT"]
     config = {}
     for line in lines:
+        print(f"{line}")
         if "=" in line:
             key, value = line.split("=", 1)
-            config[key.strip()] = value.stip()
+            print(f"{key}, {value}")
+            config[key.strip()] = value.strip()
         else:
-            print("Config file is invalid")
+            print("1. Config file is invalid")
             sys.exit(1)
     missing = [item for item in required if item not in config]
     if missing:
@@ -73,7 +75,7 @@ def read_config(file: str) -> dict[str, Any]:
             if isinstance(config[item], bool):
                 continue
             else:
-                raise ValueError(f"Invalid value for {item}: {config[item]}")
+                raise ValueError(f"bool Invalid value for {item}: {config[item]}")
         else:
             print(f"Included other key: {item}")
     return config
